@@ -87,3 +87,48 @@ h6 {
 }
 
 /*--------------------*/
+.wrapper {
+  max-width: 1920px;
+}
+
+.header {
+  background: #e5e5e5;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__icon {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  display: block;
+}

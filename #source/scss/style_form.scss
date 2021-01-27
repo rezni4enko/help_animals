@@ -1,0 +1,131 @@
+.wrapper {
+   max-width: 525px;
+   margin: 0 auto;
+   border: 2px solid #000;
+}
+.container {
+   max-width: 445px;
+   margin: 0 auto;
+}
+.title {
+   margin-top: 30px;
+   padding-bottom: 16px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 28px;
+   color: #b3b3b3;
+   border-bottom: 1px solid #eebf3a;
+}
+
+.animal__info {
+   display: flex;
+   margin-top: 17px;
+}
+.animal__info img {
+   border-radius: 50%;
+}
+.comments__animal {
+   margin-left: 10px;
+}
+.name__animal {
+   margin-top: 23px;
+   margin-bottom: 8px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 22px;
+}
+.gender-age__animal {
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+}
+.text__info {
+   margin-top: 18px;
+   margin-bottom: 32px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 140%;
+   font-size: 16px;
+   color: #6b6b6b;
+}
+.input {
+   display: block;
+   border: 1px solid #d6d6d6;
+   box-sizing: border-box;
+   border-radius: 2px;
+   height: 40px;
+   width: 100%;
+   padding-left: 16px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #6b6b6b;
+   opacity: 0.7;
+}
+.phone__form {
+   display: block;
+   margin-top: 16px;
+}
+.comments__form {
+   display: block;
+   border: 1px solid #d6d6d6;
+   box-sizing: border-box;
+   border-radius: 2px;
+   height: 76px;
+   width: 100%;
+   padding-left: 16px;
+   padding-top: 10px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   color: #6b6b6b;
+   opacity: 0.7;
+   margin-top: 40px;
+}
+.contakts__info {
+   margin-top: 24px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 140%;
+   color: #474747;
+   margin-bottom: 32px;
+}
+.button__form {
+   box-shadow: 3px 3px 13px rgba(128, 128, 128, 0.25);
+   border-radius: 58px;
+   //height: 42px;
+   border: 1px solid #d6d6d6;
+   padding-left: 29px;
+   padding-right: 26px;
+   font-family: Gilroy;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 40px;
+   background: linear-gradient(180deg, #fbfbfb 0%, #f6f6f6 100%);
+   :hover {
+      background: #ffe7a2;
+   }
+}
+.zona__buttons {
+   display: flex;
+   justify-content: space-between;
+}
+.button__wrapper {
+   background: #f6f6f6;
+   box-shadow: 7px 7px 16px #e3e3e3, -4px -4px 8px rgba(255, 255, 255, 0.7), inset 13px 22px 8px rgba(0, 0, 0, 0.02);
+   border-radius: 58px;
+   height: 42px;
+   margin-bottom: 30px;
+   :hover {
+      background: #fee39e;
+   }
+}

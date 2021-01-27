@@ -73,3 +73,41 @@ h6 {
 	font-weight: 400;
 }
 /*--------------------*/
+.wrapper {
+	max-width: 1920px;
+}
+.header {
+	background: #e5e5e5;
+}
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
+}
+.header__burger {
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+}
+.header__list {
+	display: flex;
+}
+.headre__link {
+}
+.header__list-info {
+	display: flex;
+}
+.header__list-icon {
+	display: flex;
+}
+.title {
+}
+.button {
+}
+.btn {
+}
+.header__icon {
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	display: block;
+}
