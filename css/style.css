@@ -318,6 +318,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 0 79px 0;
 }
 
 .how-help__item-img {
@@ -345,4 +346,120 @@ h1 {
   text-align: center;
   color: #474747;
   margin: 24px 0 0 0;
+}
+
+.give-home {
+  background: #e5e5e5;
+}
+
+.give-home__title {
+  background: url(../img/home/Frame61.svg) top center no-repeat;
+  margin: 0 auto;
+  min-height: 150px;
+}
+
+.give-home__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.give-home__item {
+  width: 389px;
+  margin: 0 0 0 97px;
+}
+
+.give-home__item-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  margin: 68px 0 20px 0;
+}
+
+.give-home__item-text {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.give-home__animals-title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 72px 0 32px 0;
+}
+
+.animal__card {
+  width: 368px;
+  height: 695px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+}
+
+.animal__card-wrapper {
+  margin: 16px;
+}
+
+.animal__name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  padding: 8px 0 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.animal__age {
+  font-weight: 500;
+  line-height: 20px;
+  color: #6b6b6b;
+  padding: 8px 0 6px 0;
+}
+
+.animal__discription {
+  font-weight: 500;
+  line-height: 20px;
+  height: 130px;
+}
+
+.animal__button {
+  width: 209px;
+  height: 42px;
+  background: #fbc832;
+  border-radius: 58px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.animal__button-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #242424;
+}
+
+.animal__button-2 {
+  margin: 17px auto 0;
+  width: 296px;
+  height: 42px;
+  border: 2px solid #ffc41e;
+  border-radius: 58px;
+  text-align: center;
+}
+
+.animal__button-2-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #242424;
 }
