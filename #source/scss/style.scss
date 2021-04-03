@@ -349,6 +349,7 @@ h1 {
 	background: #fff;
 	border-radius: 5px;
 	border: 1px solid #d6d6d6;
+	margin: 0 0 44px 0;
 }
 .animal__card-wrapper {
 	margin: 16px;
@@ -402,4 +403,48 @@ h1 {
 	font-size: 20px;
 	line-height: 40px;
 	color: #242424;
+}
+.animal {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1145px;
+	justify-content: space-between;
+}
+.give-home__show-all {
+	display: block;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 40px;
+	color: #ad7f00;
+	align-items: center;
+	text-decoration-line: underline;
+	align-items: center;
+	text-align: center;
+}
+.give-home__swow-all__icon {
+	padding: 11px 16px 0;
+}
+.give-home__links {
+	padding: 65px 0 76px 0;
+	display: flex;
+	justify-content: center;
+}
+.give-home__help-quickly {
+	font-size: 18px;
+	line-height: 24px;
+	max-width: 583px;
+}
+.give-home__list-links {
+	display: flex;
+}
+.give-home__icon {
+	border: 2px solid #ffc41e;
+	box-sizing: border-box;
+	border-radius: 50%;
+	width: 49px;
+	height: 49px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 16px;
 }
