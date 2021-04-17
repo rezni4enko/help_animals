@@ -154,8 +154,6 @@ body {
 	margin: 0 auto;
 }
 
-.header__burger {
-}
 .header__menu {
 	display: flex;
 	justify-content: space-between;
@@ -163,18 +161,39 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 }
-.header__list {
+.menu__list {
 	display: flex;
 }
-.headre__link {
+.menu__link {
 	margin: 54px 30px 0 0;
 }
-.header__list-info {
+.menu__list-info {
 	display: flex;
 }
-.header__list-icon {
+.menu__list-icon {
 	display: flex;
+	margin: 0 97px 0 0;
 }
+.menu__icon {
+	display: block;
+	width: 49px;
+	height: 49px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 39px 28px 0 0;
+	position: relative;
+}
+.icon-vk img {
+	position: absolute;
+	bottom: 11px;
+	right: 8px;
+}
+.icon-in img {
+	position: absolute;
+	bottom: 9px;
+	left: 9px;
+}
+
 .header__title {
 	font-weight: bold;
 	font-size: 72px;
@@ -447,4 +466,114 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	margin: 0 16px;
+}
+.moneyhelp {
+}
+.moneyhelp__image {
+	background: url(../img/manihelp/headicon.svg) center no-repeat;
+	margin: 0 auto;
+	min-height: 196px;
+}
+.moneyhelp__title {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+}
+.moneyhelp__text {
+	margin: 0 auto;
+	padding: 24px 0 40px 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	max-width: 758px;
+	align-items: center;
+	text-align: center;
+}
+.money-help__row {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 0 68px 0;
+}
+.column-money__title {
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 24px;
+	padding: 0 0 24px 0;
+}
+.column-money__text {
+	font-size: 16px;
+	line-height: 140%;
+	span {
+		font-weight: 700;
+	}
+}
+.column-money__button {
+	margin: 24px 0 0 0;
+}
+.button__yellow-223 {
+	width: 223px;
+	height: 42px;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 40px;
+}
+.bring-eat {
+	background: #e5e5e5;
+}
+.bring-eat__body {
+	margin: 0 auto;
+	max-width: 680px;
+}
+.bring-eat__image {
+	height: 198px;
+	background: url(../img/bring-eat/Frame89.svg) center no-repeat;
+}
+.bring-eat__title {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 24px;
+	margin: 40px 0 0 0;
+}
+.bring-eat__text {
+	font-size: 16px;
+	line-height: 140%;
+	padding: 24px 0 0 0;
+	span {
+		font-weight: 700;
+	}
+}
+.bring-eat__link {
+	margin: 16px 0 32px 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 40px;
+	text-decoration: underline;
+	color: #ad7f00;
+	display: inline-block;
+}
+.transport {
+	background: #e5e5e5;
+}
+.transport__image {
+	height: 206px;
+	margin: 0 auto;
+	background: url(../img/transport/Group27.svg) center no-repeat;
+}
+.transport__body {
+	max-width: 680px;
+	margin: 0 auto;
+}
+.transport__title {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 24px;
+}
+.tansport__title {
+	font-size: 16px;
+	line-height: 140%;
+	margin: 24px 0;
 }
