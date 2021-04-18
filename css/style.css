@@ -264,7 +264,7 @@ h1 {
   max-width: 428px;
 }
 
-.discription__body {
+.description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,4 +695,68 @@ h1 {
   font-size: 16px;
   line-height: 140%;
   margin: 24px 0;
+}
+
+.transport__button {
+  margin: 0 0 82px 0;
+}
+
+.volunteering {
+  background: #e5e5e5;
+}
+
+.volunteering__image {
+  margin: 0 auto;
+  height: 106px;
+  background: url(../img/volunteering/Group317.svg) center no-repeat;
+}
+
+.volunteering__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 571px;
+}
+
+.volunteering__column {
+  position: relative;
+  width: 50%;
+}
+
+.volunteering__square {
+  background: #ffc41e;
+  width: 621px;
+  height: 521px;
+  position: absolute;
+  right: 334px;
+}
+
+.volunteering__title {
+  margin: 113px 0 24px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+}
+
+.volunteering__text {
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 466px;
+}
+
+.volunteering__button {
+  margin: 24px 0 0 0;
+}
+
+volunteering__image-dog {
+  height: 100%;
+  width: 100%;
+}
+
+.volunteering__img {
+  border: 28px solid #ffc41e;
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  top: 0;
 }
