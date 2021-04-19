@@ -760,3 +760,120 @@ volunteering__image-dog {
   right: 100px;
   top: 0;
 }
+
+.news {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.news__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  text-align: center;
+  margin: 54px 0 0 0;
+}
+
+.news__img {
+  margin: 40px 35px 0 0;
+}
+
+.news__text {
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 603px;
+  margin: 40px 0 0 0;
+}
+
+.news__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news__allnews {
+  font-weight: 500;
+  font-size: 20px;
+  color: #ad7f00;
+  line-height: 40px;
+  text-decoration: underline;
+  margin: 24px 0 53px 0;
+  display: inline-block;
+}
+
+.about-us {
+  background: #e5e5e5;
+}
+
+.about-us__body {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 24px;
+  padding: 56px 0 24px 0;
+  text-align: center;
+}
+
+.about-us__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.abuot-us__contacts-title {
+  font-size: 22px;
+  line-height: 26px;
+  padding: 24px 0;
+}
+
+.about-us__contacts {
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.about-us__call {
+  font-size: 16px;
+  line-height: 140%;
+  padding: 40px 0 16px 0;
+}
+
+.about-us__list-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link-icon__vk {
+  border: 2px solid #ffc41e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  margin: 0 32px 54px 0;
+}
+
+.link-icon__vk img {
+  padding: 16px 0 0 0;
+}
+
+.link-icon__in {
+  border: 2px solid #ffc41e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+}
+
+.link-icon__in img {
+  padding: 9px 0 0 0;
+}
