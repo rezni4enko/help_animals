@@ -146,12 +146,32 @@ body {
 	background: #e5e5e5;
 }
 .header__body {
-	background: url(../img/header/dog.png) top right no-repeat;
+	//background: url(../img/header/dog.png) top right no-repeat;
 	min-height: 834px;
+	position: relative;
+	@media (max-width: 1269px) {
+		min-height: 642px;
+	}
+}
+.header__image {
+	background: url(../img/header/dog.png) top right no-repeat;
+	position: absolute;
+	height: 716px;
+	width: 100%;
+	//z-index: 0;
+	@media (max-width: 1269px) {
+		height: 564px;
+		width: 504px;
+		background-size: auto 100%;
+		right: 0;
+	}
 }
 .container {
 	max-width: 1150px;
 	margin: 0 auto;
+	@media (max-width: 1269px) {
+		max-width: 804px;
+	}
 }
 
 .header__menu {
@@ -166,6 +186,7 @@ body {
 }
 .menu__link {
 	margin: 54px 30px 0 0;
+	z-index: 2;
 }
 .menu__list-info {
 	display: flex;
@@ -173,6 +194,10 @@ body {
 .menu__list-icon {
 	display: flex;
 	margin: 0 97px 0 0;
+	z-index: 2;
+	@media (max-width: 1269px) {
+		margin: 0 69px 0 0;
+	}
 }
 .menu__icon {
 	display: block;
@@ -180,7 +205,7 @@ body {
 	height: 49px;
 	border: 2px solid #fff;
 	border-radius: 50%;
-	margin: 39px 28px 0 0;
+	margin: 39px 0 0 28px;
 	position: relative;
 }
 .icon-vk img {
@@ -198,7 +223,14 @@ body {
 	font-weight: bold;
 	font-size: 72px;
 	line-height: 87px;
-	margin: 91px 0 2px 0;
+	margin: 76px 0 2px 0;
+	z-index: 5;
+	position: relative;
+	@media (max-width: 1269px) {
+		font-size: 64px;
+		line-height: 77px;
+		margin: 33px 0 0 0;
+	}
 }
 .button__yellow {
 	background: #fbc832;
@@ -206,6 +238,7 @@ body {
 	width: 182px;
 	height: 42px;
 	text-align: center;
+	z-index: 2;
 }
 .btn {
 	font-weight: 500;
@@ -223,6 +256,12 @@ h1 {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 18px;
+	z-index: 5;
+	position: relative;
+	@media (max-width: 1269px) {
+		font-size: 14px;
+		line-height: 16px;
+	}
 }
 
 .header__text {
@@ -231,6 +270,12 @@ h1 {
 	color: #474747;
 	line-height: 140%;
 	max-width: 659px;
+	z-index: 5;
+	position: relative;
+	@media (max-width: 1269px) {
+		font-size: 14px;
+		max-width: 461px;
+	}
 }
 .header__text-yellow {
 	margin: 43px 0 44px 0;
@@ -239,47 +284,83 @@ h1 {
 	line-height: 29px;
 	color: #c78100;
 	max-width: 428px;
+	@media (max-width: 1269px) {
+		font-size: 20px;
+		line-height: 24px;
+		max-width: 300px;
+	}
 }
 .description {
+}
+.discription__body {
 	display: flex;
+	margin: 54px 0;
+	@media (max-width: 1269px) {
+		margin: 36px 0;
+	}
+}
+.discription__row {
+	flex: 0 1 50%;
 }
 .discription__animals {
 	background: #fac832;
 	height: 521px;
-	width: 44.27%;
 	border-radius: 0 260px 260px 0;
 	position: relative;
-	margin: 54px 0 75px 0;
+	margin: 0 94px 0 0;
+	@media (max-width: 1269px) {
+		height: 362px;
+		border-radius: 0 182px 182px 0;
+	}
 }
 .discription__animals-dog {
 	width: 100%;
 	height: 100%;
-	background: url(../img/discription/Ellipse.png) center right no-repeat;
 	position: relative;
-	right: 28px;
+	img.discription__dog {
+		position: absolute;
+		right: 29px;
+		top: 29px;
+		@media (max-width: 1269px) {
+			height: 322px;
+			top: 21px;
+			right: 21px;
+		}
+	}
 }
 .discription__animals-cat {
-	width: 245px;
-	height: 245px;
 	border-radius: 50%;
 	border: #fac832 solid 8px;
-	background: url(../img/discription/Ellipse39.png) no-repeat;
 	position: absolute;
 	bottom: -20px;
 	right: -29px;
+	@media (max-width: 1269px) {
+		border: #fac832 solid 6px;
+	}
+	img.discription__cat {
+		@media (max-width: 1269px) {
+			height: 158px;
+		}
+	}
 }
 .discription__content {
 	width: 466px;
-	margin: 0 0 0 94px;
 	box-sizing: border-box;
+	@media (max-width: 1269px) {
+		width: 323px;
+	}
 }
 .discription__title {
-	margin: 128px 0 28px 0;
+	margin: 74px 0 28px 0;
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 120%;
 	color: #c78100;
 	text-align: center;
+	@media (max-width: 1269px) {
+		margin: 31px 0 24px 0;
+		font-size: 24px;
+	}
 }
 .discription__text {
 	line-height: 140%;
@@ -298,11 +379,18 @@ h1 {
 	font-weight: 300;
 	font-size: 28px;
 	line-height: 24px;
+	@media (max-width: 1269px) {
+		padding: 64px 0 32px 0;
+		font-size: 24px;
+	}
 }
 .how-help__row {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 0 79px 0;
+	@media (max-width: 1269px) {
+		padding: 0 0 75px 0;
+	}
 }
 .how-help__item {
 }
@@ -315,6 +403,14 @@ h1 {
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
+	@media (max-width: 1269px) {
+		width: 110px;
+		height: 110px;
+		img {
+			height: 60%;
+			width: 60%;
+		}
+	}
 }
 .how-help__item-text {
 	width: 166px;
@@ -324,14 +420,25 @@ h1 {
 	text-align: center;
 	color: #474747;
 	margin: 24px 0 0 0;
+	@media (max-width: 1269px) {
+		width: 140px;
+	}
 }
 .give-home {
 	background: #e5e5e5;
 }
 .give-home__title {
-	background: url(../img/home/Frame61.svg) top center no-repeat;
+	//background: url(../img/home/Frame61.svg) top center no-repeat;
 	margin: 0 auto;
-	min-height: 150px;
+	height: 140px;
+	img {
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
+	@media (max-width: 1269px) {
+		height: 96px;
+	}
 }
 
 .give-home__row {
@@ -341,12 +448,20 @@ h1 {
 .give-home__item {
 	width: 389px;
 	margin: 0 0 0 97px;
+	@media (max-width: 1269px) {
+		width: 275px;
+		font-size: 24px;
+	}
 }
 .give-home__item-title {
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 24px;
 	margin: 68px 0 20px 0;
+	@media (max-width: 1269px) {
+		margin: 61px 0 4px 0;
+		height: 64px;
+	}
 }
 .give-home__item-text {
 	font-size: 16px;
@@ -359,6 +474,9 @@ h1 {
 	align-items: center;
 	text-align: center;
 	margin: 72px 0 32px 0;
+	@media (max-width: 1296px) {
+		margin: 48px 0 24px 0;
+	}
 }
 .animal__card {
 	width: 368px;
@@ -437,6 +555,9 @@ h1 {
 	text-decoration-line: underline;
 	align-items: center;
 	text-align: center;
+	@media (max-width: 1269px) {
+		margin: -36px 0 0 0;
+	}
 }
 .give-home__swow-all__icon {
 	padding: 11px 16px 0;
@@ -445,11 +566,18 @@ h1 {
 	padding: 65px 0 76px 0;
 	display: flex;
 	justify-content: center;
+	@media (max-width: 1269px) {
+		padding: 48px 0 74px 0;
+	}
 }
 .give-home__help-quickly {
 	font-size: 18px;
 	line-height: 24px;
 	max-width: 583px;
+	@media (max-width: 1269px) {
+		font-size: 16px;
+		max-width: 515px;
+	}
 }
 .give-home__list-links {
 	display: flex;
@@ -468,9 +596,23 @@ h1 {
 .moneyhelp {
 }
 .moneyhelp__image {
-	background: url(../img/manihelp/headicon.svg) center no-repeat;
+	//background: url(../img/manihelp/headicon.svg) center no-repeat;
 	margin: 0 auto;
-	min-height: 196px;
+	height: 126px;
+	margin: 30px 0 40px 0;
+	@media (max-width: 1269px) {
+		height: 96px;
+	}
+	img {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}
+.moneyhelp__column {
+	@media (max-width: 1269px) {
+		width: 275px;
+	}
 }
 .moneyhelp__title {
 	font-style: normal;
@@ -479,7 +621,11 @@ h1 {
 	line-height: 24px;
 	align-items: center;
 	text-align: center;
+	@media (max-width: 1269px) {
+		font-size: 24px;
+	}
 }
+
 .moneyhelp__text {
 	margin: 0 auto;
 	padding: 24px 0 40px 0;
@@ -489,17 +635,29 @@ h1 {
 	max-width: 758px;
 	align-items: center;
 	text-align: center;
+	@media (max-width: 1269px) {
+		font-size: 16px;
+		max-width: 530px;
+		padding: 16px 0 40px 0;
+		font-size: 14px;
+	}
 }
 .money-help__row {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 0 0 68px 0;
+	@media (max-width: 1269px) {
+		padding: 0 0 24px 0;
+	}
 }
 .column-money__title {
 	font-weight: 300;
 	font-size: 28px;
 	line-height: 24px;
 	padding: 0 0 24px 0;
+	@media (max-width: 1269px) {
+		font-size: 24px;
+	}
 }
 .column-money__text {
 	font-size: 16px;
@@ -722,4 +880,44 @@ volunteering__image-dog {
 	img {
 		padding: 9px 0 0 0;
 	}
+}
+.footer {
+}
+.footer__image {
+	background: url(/img/footer/361641.png) center no-repeat;
+	height: 741px;
+	background-size: cover;
+	max-width: 1920px;
+	position: relative;
+}
+.footer__square {
+	background: #322d1e;
+	//opacity: 0.3;
+	height: 521px;
+	width: 357px;
+	position: absolute;
+	bottom: 119px;
+	left: 0;
+}
+.footer__circle {
+	width: 521px;
+	height: 521px;
+	border-radius: 50%;
+	background: #322d1e;
+	//opacity: 0.3;
+	position: absolute;
+	bottom: 119px;
+	left: 94px;
+}
+.footer__menu {
+}
+.menu-footer {
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+}
+.menu-footer__list-contacts {
+}
+.menu-footer__item-contact {
 }
