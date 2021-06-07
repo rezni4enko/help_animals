@@ -883,29 +883,56 @@ h1 {
 
 .bring-eat {
   background: #e5e5e5;
+  padding: 36px 0 0 0;
 }
 
 .bring-eat__body {
   margin: 0 auto;
   max-width: 680px;
+  padding: 16px 0 0 0;
+}
+
+@media (max-width: 1269px) {
+  .bring-eat__body {
+    max-width: 481px;
+    padding: 0;
+  }
 }
 
 .bring-eat__image {
-  height: 198px;
-  background: url(../img/bring-eat/Frame89.svg) center no-repeat;
+  height: 126px;
+}
+
+@media (max-width: 1269px) {
+  .bring-eat__image {
+    height: 96px;
+  }
+}
+
+.bring-eat__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .bring-eat__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 24px;
-  margin: 40px 0 0 0;
+  margin: 24px 0 0 0;
+}
+
+@media (max-width: 1269px) {
+  .bring-eat__title {
+    font-size: 24px;
+  }
 }
 
 .bring-eat__text {
   font-size: 16px;
   line-height: 140%;
-  padding: 24px 0 0 0;
+  padding: 24px 0 16px 0;
 }
 
 .bring-eat__text span {
@@ -913,7 +940,7 @@ h1 {
 }
 
 .bring-eat__link {
-  margin: 16px 0 32px 0;
+  margin: 16px 0 72px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
@@ -922,14 +949,32 @@ h1 {
   display: inline-block;
 }
 
+@media (max-width: 1269px) {
+  .bring-eat__link {
+    margin: 16px 0 58px 0;
+  }
+}
+
 .transport {
   background: #e5e5e5;
 }
 
 .transport__image {
-  height: 206px;
+  height: 126px;
   margin: 0 auto;
-  background: url(../img/transport/Group27.svg) center no-repeat;
+}
+
+@media (max-width: 1269px) {
+  .transport__image {
+    height: 96px;
+  }
+}
+
+.transport__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .transport__body {
@@ -937,13 +982,20 @@ h1 {
   margin: 0 auto;
 }
 
+@media (max-width: 1269px) {
+  .transport__body {
+    max-width: 481px;
+  }
+}
+
 .transport__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 24px;
+  margin: 40px 0 0;
 }
 
-.tansport__title {
+.tansport__text {
   font-size: 16px;
   line-height: 140%;
   margin: 24px 0;
@@ -953,6 +1005,12 @@ h1 {
   margin: 0 0 82px 0;
 }
 
+@media (max-width: 1269px) {
+  .transport__button {
+    margin: 0 0 76px 0;
+  }
+}
+
 .volunteering {
   background: #e5e5e5;
 }
@@ -960,14 +1018,31 @@ h1 {
 .volunteering__image {
   margin: 0 auto;
   height: 106px;
-  background: url(../img/volunteering/Group317.svg) center no-repeat;
+}
+
+@media (max-width: 1269px) {
+  .volunteering__image {
+    height: 96px;
+  }
+}
+
+.volunteering__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .volunteering__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 571px;
+}
+
+@media (max-width: 1269px) {
+  .volunteering__body {
+    margin: 44px 0 0 0;
+  }
 }
 
 .volunteering__column {
@@ -983,11 +1058,25 @@ h1 {
   right: 334px;
 }
 
+@media (max-width: 1269px) {
+  .volunteering__square {
+    height: 390px;
+    right: 290px;
+  }
+}
+
 .volunteering__title {
   margin: 113px 0 24px 0;
   font-weight: 600;
   font-size: 28px;
   line-height: 24px;
+}
+
+@media (max-width: 1269px) {
+  .volunteering__title {
+    margin: 3px 0 24px 0;
+    font-size: 24px;
+  }
 }
 
 .volunteering__text {
@@ -996,13 +1085,20 @@ h1 {
   max-width: 466px;
 }
 
-.volunteering__button {
-  margin: 24px 0 0 0;
+@media (max-width: 1269px) {
+  .volunteering__text {
+    max-width: 323px;
+  }
 }
 
-volunteering__image-dog {
-  height: 100%;
-  width: 100%;
+.volunteering__button {
+  margin: 24px 0 162px 0;
+}
+
+@media (max-width: 1269px) {
+  .volunteering__button {
+    margin: 24px 0 41px 0;
+  }
 }
 
 .volunteering__img {
@@ -1013,9 +1109,26 @@ volunteering__image-dog {
   top: 0;
 }
 
+@media (max-width: 1269px) {
+  .volunteering__img {
+    width: 348px;
+    height: 348px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    border: 21px solid #ffc41e;
+  }
+}
+
 .news {
   max-width: 780px;
   margin: 0 auto;
+}
+
+@media (max-width: 1269px) {
+  .news {
+    width: 619px;
+    margin: 0 auto;
+  }
 }
 
 .news__title {
@@ -1026,21 +1139,55 @@ volunteering__image-dog {
   margin: 54px 0 0 0;
 }
 
+@media (max-width: 1269px) {
+  .news__title {
+    margin: 36px 0 26px 0;
+    font-size: 24px;
+  }
+}
+
 .news__img {
-  margin: 40px 35px 0 0;
+  margin: 0 35px 0 0;
+}
+
+@media (max-width: 1269px) {
+  .news__img {
+    margin: 5px 56px 7px 0;
+  }
 }
 
 .news__text {
   font-size: 16px;
   line-height: 140%;
   max-width: 603px;
-  margin: 40px 0 0 0;
+  margin: auto 0;
+}
+
+@media (max-width: 1269px) {
+  .news__text {
+    max-width: 433px;
+  }
 }
 
 .news__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 40px 0 0 0;
+}
+
+@media (max-width: 1269px) {
+  .news__column {
+    width: 619px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1269px) {
+  .news__column img {
+    height: 130px;
+    width: 130px;
+  }
 }
 
 .news__allnews {
@@ -1053,6 +1200,12 @@ volunteering__image-dog {
   display: inline-block;
 }
 
+@media (max-width: 1269px) {
+  .news__allnews {
+    margin: 16px 0 36px 0;
+  }
+}
+
 .about-us {
   background: #e5e5e5;
 }
@@ -1060,6 +1213,12 @@ volunteering__image-dog {
 .about-us__body {
   max-width: 680px;
   margin: 0 auto;
+}
+
+@media (max-width: 1269px) {
+  .about-us__body {
+    width: 481px;
+  }
 }
 
 .about-us__title {
@@ -1070,10 +1229,23 @@ volunteering__image-dog {
   text-align: center;
 }
 
+@media (max-width: 1269px) {
+  .about-us__title {
+    font-size: 24px;
+    padding: 48px 0 24px 0;
+  }
+}
+
 .about-us__text {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media (max-width: 1269px) {
+  .about-us__text {
+    font-size: 16px;
+  }
 }
 
 .abuot-us__contacts-title {
@@ -1087,10 +1259,22 @@ volunteering__image-dog {
   line-height: 140%;
 }
 
+@media (max-width: 1269px) {
+  .about-us__contacts {
+    font-size: 14px;
+  }
+}
+
 .about-us__call {
   font-size: 16px;
   line-height: 140%;
   padding: 40px 0 16px 0;
+}
+
+@media (max-width: 1269px) {
+  .about-us__call {
+    padding: 32px 0 24px 0;
+  }
 }
 
 .about-us__list-links {
