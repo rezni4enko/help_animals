@@ -162,6 +162,21 @@ body {
   }
 }
 
+/*----------------------*/
+@media (max-width: 1023px) {
+  .header__burger {
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+    position: relative;
+  }
+}
+
+.header__burger button {
+  font-size: 0;
+}
+
+/*----------------------*/
 .header__image {
   background: url(../img/header/dog.png) top right no-repeat;
   position: absolute;
