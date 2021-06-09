@@ -143,6 +143,19 @@ body {
 
 .header {
   background: #e5e5e5;
+  height: 821px;
+}
+
+@media (max-width: 1269px) {
+  .header {
+    height: 642px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    height: 535px;
+  }
 }
 
 /*-------------------*/
@@ -151,11 +164,12 @@ body {
     font-size: 0;
     margin: 34px 0 0 0;
     position: absolute;
-    z-index: 5;
+    z-index: 20;
     width: 30px;
     height: 20px;
+    cursor: pointer;
   }
-  .header__burger button,
+  .header__burger span,
   .header__burger::after,
   .header__burger::before {
     background: #242424;
@@ -167,60 +181,87 @@ body {
   .header__burger::after {
     content: "";
     bottom: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .header__burger::before {
     content: "";
     top: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
-  .header__burger button {
+  .header__burger span {
     bottom: 50%;
     -webkit-transform: scale(1) translate(0px, 50%);
             transform: scale(1) translate(0px, 50%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__burger._active span {
+    display: none;
+  }
+  .header__burger._active::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+  }
+  .header__burger._active::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
   }
 }
 
-.header__burger button {
-  font-size: 0;
+.header__menu._active::before {
+  content: "";
+  display: block;
+  height: 78px;
+  background: #ffc41e;
+}
+
+.header__menu._active {
+  position: absolute;
+  width: 100%;
+  height: 383px;
+  left: 0;
+  display: block;
+  text-align: center;
+  background: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #242424;
+  z-index: 10;
+}
+
+.menu__list._active {
+  display: block;
+  width: 100%;
+}
+
+.menu__list-info._active {
+  display: block;
+  width: 100%;
+}
+
+.menu__list-icon._active {
+  display: none;
+}
+
+.header__title._active {
+  margin-top: 0;
+  padding-top: 76px;
 }
 
 /*-------------------*/
-.header__body {
-  min-height: 834px;
-  position: relative;
-}
-
-@media (max-width: 1269px) {
-  .header__body {
-    min-height: 642px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .header__body {
-    min-height: 535px;
-  }
-}
-
-/*----------------------*/
-@media (max-width: 1023px) {
-  .header__burger {
-    width: 30px;
-    height: 20px;
-    z-index: 5;
-    position: relative;
-  }
-}
-
-.header__burger button {
-  font-size: 0;
-}
-
-/*----------------------*/
 .header__image {
   background: url(../img/header/dog.png) top right no-repeat;
   position: absolute;
   height: 716px;
   width: 100%;
+  right: 110px;
 }
 
 @media (max-width: 1269px) {
@@ -228,7 +269,6 @@ body {
     height: 564px;
     width: 504px;
     background-size: auto 100%;
-    right: 0;
   }
 }
 
